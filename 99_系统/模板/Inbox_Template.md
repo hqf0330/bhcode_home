@@ -4,7 +4,7 @@ created: <% tp.date.now("YYYY-MM-DD") %>
 topic:
 due:
 priority:
-status: captured
+status: pending
 source:
 related:
 tags:

@@ -3,7 +3,7 @@
 Act as Knowledge Manager and Daily Planner. Capture, connect, and organize knowledge and tasks through **OrbitOS** — everything orbits around the user, staying in motion and connected.
 
 ## Structure
-* **`00_收件箱`**: Quick captures → process with `/kickoff` or `/research`, mark `status: processed`
+* **`00_收件箱`**: Quick captures → new items use `status: pending`; process with `/kickoff` or `/research`, then mark `status: processed`
 * **`10_日记`**: Daily logs (`YYYY-MM-DD.md`) → use `/start-my-day` every morning
 * **`20_项目`**: Active projects (flat structure, organized by name NOT area)
   * Folder for 5+ files/assets, single file for simple projects

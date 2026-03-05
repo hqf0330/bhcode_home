@@ -79,9 +79,15 @@ For each new idea/task mentioned in Q2:
 2. If new, create `00_收件箱/[Brief-Title].md`:
    ```yaml
    ---
+   type: inbox
    created: YYYY-MM-DD
+   topic:
+   due:
+   priority:
    status: pending
    source: start-my-day
+   related:
+   tags: [inbox]
    ---
    [User's description]
    ```

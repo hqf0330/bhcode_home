@@ -7,6 +7,17 @@
 # Track .gitignore itself
 !.gitignore
 
+# Track root-level assistant configs (current CN root layout)
+!.agents/
+!.agents/**
+!.gemini/
+!.gemini/**
+!.codex/
+!.codex/**
+!.claude/
+!.claude/**
+.claude/settings.local.json
+
 # Track Claude, Codex, Gemini and Agents configs in language folders
 !EN/.claude/
 EN/.claude/*

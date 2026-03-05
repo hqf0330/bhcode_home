@@ -4,7 +4,7 @@
 
 > 一个 **AI 驱动**的个人生产力系统——让 AI 助手帮你打理**知识管理**和**每日规划**。
 
-![Screenshot](CN/50_资源/Screenshot.png)
+![Screenshot](50_资源/Screenshot.png)
 
 ## 安装
 
