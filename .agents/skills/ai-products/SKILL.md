@@ -13,11 +13,11 @@ Fetch, deduplicate, and rank AI product launches from multiple sources.
 | Product Hunt | `https://www.producthunt.com/feed` | Filter for AI-related |
 | Hacker News | `https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i>TIMESTAMP` | Show HN posts, 24h window |
 | GitHub Trending | `https://mshibanami.github.io/GitHubTrendingRSS/daily/python.xml` | Python repos |
-| Techmeme | `https://techmeme.com/river` | Product announcements |
+| Techmeme | `https://techmeme.com/feed.xml` | Product announcements |
 
 ## Workflow
 
-1. **Check cache**: Look for `50_资源/产品发布/YYYY-MM/YYYY-MM-DD-摘要.md`. If exists with today's date, return cached.
+1. **Check cache**: Look for `50_资源/产品发布/YYYY-MM/YYYY-MM-DD-Digest.md`. If exists with today's date, return cached.
 
 2. **Fetch sources**: Use WebFetch on each. Extract product name, URL, description, and engagement metrics (votes/points/stars).
 
@@ -39,10 +39,12 @@ Fetch, deduplicate, and rank AI product launches from multiple sources.
    - 开源亮点
 
 7. **Save files**:
-   - `50_资源/产品发布/YYYY-MM/YYYY-MM-DD-摘要.md`
+   - `50_资源/产品发布/YYYY-MM/YYYY-MM-DD-Digest.md`
    - `50_资源/产品发布/YYYY-MM/原始数据/YYYY-MM-DD_ProductHunt-Raw.md`
    - `50_资源/产品发布/YYYY-MM/原始数据/YYYY-MM-DD_HackerNews-Raw.md`
    - `50_资源/产品发布/YYYY-MM/原始数据/YYYY-MM-DD_GitHub-Raw.md`
+   - `50_资源/产品发布/YYYY-MM/原始数据/YYYY-MM-DD_Techmeme-Raw.md`
+   - Never create duplicate shortcut/mirror files (e.g. `50_资源/产品发布/YYYY-MM-DD-Digest.md`)
 
 ## Output Format
 
@@ -53,7 +55,7 @@ Fetch, deduplicate, and rank AI product launches from multiple sources.
 **产品发布机会 (5):**
 - [产品名] - [内容角度] - [关键指标]
 ...
-完整摘要: [[YYYY-MM-DD-摘要]]
+完整摘要: [[50_资源/产品发布/YYYY-MM/YYYY-MM-DD-Digest]]
 ```
 
 ## Error Handling

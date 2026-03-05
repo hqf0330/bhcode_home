@@ -55,6 +55,10 @@ Use the AskUserQuestion tool to gather:
 **Question 3:** "有什么阻碍或顾虑吗?"
 - Free text input
 
+Fallback when AskUserQuestion is unavailable:
+- Ask the same 3 questions in plain text (single concise message)
+- If user does not respond, continue with reasonable defaults and note "未提供用户补充输入"
+
 ## Step 3: Create Today's Daily Note
 
 1. **Check if today's note exists** at `10_日记/YYYY-MM-DD.md`
@@ -69,7 +73,7 @@ Use the AskUserQuestion tool to gather:
      - Include top 3-5 content opportunities from AI newsletters
      - Include top 3-5 product launch opportunities
      - Each item MUST include a markdown link to the original source: `[Title](url)`
-     - Add clear links to full digests in respective folders: `[[50_资源/Newsletters/YYYY-MM-DD-Digest]]` and `[[50_资源/产品发布/YYYY-MM-DD-Digest]]`
+     - Add clear links to full digests in respective folders: `[[50_资源/Newsletters/YYYY-MM/YYYY-MM-DD-Digest]]` and `[[50_资源/产品发布/YYYY-MM/YYYY-MM-DD-Digest]]`
    - **相关项目**: List active projects with current status
 
 ## Step 4: Process New Ideas (from Q2)
@@ -124,13 +128,13 @@ Output a concise summary in Chinese:
 - [标题](原文链接) - [角度]
 - [标题](原文链接) - [角度]
 - [标题](原文链接) - [角度]
-→ 完整摘要: [[50_资源/Newsletters/YYYY-MM-DD-Digest|今日Newsletter摘要]]
+→ 完整摘要: [[50_资源/Newsletters/YYYY-MM/YYYY-MM-DD-Digest|今日Newsletter摘要]]
 
 *产品发布:*
 - [产品](原文链接) - [角度] - [指标]
 - [产品](原文链接) - [角度] - [指标]
 - [产品](原文链接) - [角度] - [指标]
-→ 完整摘要: [[50_资源/产品发布/YYYY-MM-DD-Digest|今日产品发布摘要]]
+→ 完整摘要: [[50_资源/产品发布/YYYY-MM/YYYY-MM-DD-Digest|今日产品发布摘要]]
 
 ---
 
@@ -151,6 +155,7 @@ Output a concise summary in Chinese:
 - **Link everything** - Projects and concepts as wikilinks
 - **Capture new ideas immediately** - Create inbox items from Q2 answers
 - **Keep it fast** - Minimize back-and-forth, get user started quickly
+- **Single digest file only** - Never create duplicate shortcut/mirror files at root (e.g. `50_资源/Newsletters/YYYY-MM-DD-Digest.md`)
 
 # EDGE CASES
 

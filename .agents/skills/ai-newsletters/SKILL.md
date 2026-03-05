@@ -13,7 +13,7 @@ Fetch, deduplicate, and rank AI newsletter content into a daily digest.
 
 ## Workflow
 
-1. **Check cache**: Look for `50_资源/Newsletters/YYYY-MM/YYYY-MM-DD-摘要.md`. If exists with today's date, return cached content.
+1. **Check cache**: Look for `50_资源/Newsletters/YYYY-MM/YYYY-MM-DD-Digest.md`. If exists with today's date, return cached content.
 
 2. **Fetch feeds**: Use WebFetch on both RSS URLs. Extract title, link, pubDate, description for each item.
 
@@ -32,9 +32,10 @@ Fetch, deduplicate, and rank AI newsletter content into a daily digest.
    - Stats footer
 
 6. **Save files**:
-   - `50_资源/Newsletters/YYYY-MM/YYYY-MM-DD-摘要.md` (curated)
+   - `50_资源/Newsletters/YYYY-MM/YYYY-MM-DD-Digest.md` (curated)
    - `50_资源/Newsletters/YYYY-MM/原始数据/YYYY-MM-DD_TLDR-AI-Raw.md`
    - `50_资源/Newsletters/YYYY-MM/原始数据/YYYY-MM-DD_Rundown-AI-Raw.md`
+   - Never create duplicate shortcut/mirror files (e.g. `50_资源/Newsletters/YYYY-MM-DD-Digest.md`)
 
 ## Output Format
 
@@ -45,7 +46,7 @@ Fetch, deduplicate, and rank AI newsletter content into a daily digest.
 **内容机会 (5):**
 - [标题] - [角度]
 ...
-完整摘要: [[YYYY-MM-DD-摘要]]
+完整摘要: [[50_资源/Newsletters/YYYY-MM/YYYY-MM-DD-Digest]]
 ```
 
 ## Error Handling

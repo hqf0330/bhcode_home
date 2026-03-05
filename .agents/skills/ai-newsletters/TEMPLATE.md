@@ -8,8 +8,8 @@ type: newsletter-digest
 date: YYYY-MM-DD
 sources: [TLDR AI, The Rundown AI]
 raw_sources:
-  - "[[YYYY-MM-DD_TLDR-AI-Raw]]"
-  - "[[YYYY-MM-DD_Rundown-AI-Raw]]"
+  - "[[50_资源/Newsletters/YYYY-MM/原始数据/YYYY-MM-DD_TLDR-AI-Raw]]"
+  - "[[50_资源/Newsletters/YYYY-MM/原始数据/YYYY-MM-DD_Rundown-AI-Raw]]"
 item_count: 12
 duplicates_merged: 3
 top_topics: [话题1, 话题2, 话题3]
@@ -23,7 +23,7 @@ created: YYYY-MM-DD HH:MM
 # AI Newsletter 摘要: YYYY-MM-DD
 
 > 来源: TLDR AI 和 The Rundown AI
-> 原始 Newsletter: [[YYYY-MM-DD_TLDR-AI-Raw]] | [[YYYY-MM-DD_Rundown-AI-Raw]]
+> 原始 Newsletter: [[50_资源/Newsletters/YYYY-MM/原始数据/YYYY-MM-DD_TLDR-AI-Raw]] | [[50_资源/Newsletters/YYYY-MM/原始数据/YYYY-MM-DD_Rundown-AI-Raw]]
 
 ## 精选推荐 (内容创作机会)
 
